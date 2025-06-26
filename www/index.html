@@ -10,13 +10,22 @@
   </head>
   <body>
     <p title="тот кто прочитал - крутой рял!"><b>anatolycore</b></p>
-    <p>крутые разрабы:
+<!-- панель разраб -->
+    <details title="увидеть имена разработчиков">
+      <summary>крутые разрабы</summary>
       <a href="https://t.me/anatoly_shchurenko" title="тгк Анатолия Щуренко" target="_blank">Анатолий Щуренко</a>
-      <a href="https://t.me/quendi45" title="тгк lloyd-a" target="_blank">lloyd</a> </p> <br>
-    <a href="https://th.bing.com/th?id=OIF.4XfBHtZmKm8%2b1VH1k0g8cA&r=0&rs=1&pid=ImgDetMain" target="_blank">СМЕШНОЕ ФОТКА</a><br>
-    <img src="https://img001.prntscr.com/file/img001/YV1pGIUyQ9W3kIm7jZOSzg.png" width="300px" height="300px" title="РОЖА ЛОЕДА КРУПНЫМ ПЛАНОМ" alt="тут была рожа лоеда :-(">
-    <img src="https://img001.prntscr.com/file/img001/AGGyvijgRmqXezcuBgb_eg.png" width="300px" height="300px" title="РОЖА ТОЛЯНА КРУПНЫМ ПЛАНОМ" alt="тут была рожа лоеда :-(">
-
+      <a href="https://t.me/quendi45" title="тгк lloyd-a" target="_blank">lloyd</a> </p>
+    </details><br><br>
+<!-- панель ввода -->
+    <form action="" method="post">
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" name="username"
+      placeholder="Введите сюда своё имя" maxlength="20" title="Незарегистрированные пользователи анонимны"> <br><br>
+      <textarea placeholder="Текст пасты" maxlength="2000" id="text_for_pasta" required="" style="width: 324px; height: 148px;"></textarea ><br>
+      <input type="submit" value="Отправить">
+      <input type="reset" value="Очистить">
+    </form>
+<!-- прогрузка js -->
     <script src="js/main.js"></script>
   </body>
 </html>
