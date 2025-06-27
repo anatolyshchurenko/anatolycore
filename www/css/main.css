@@ -1,4 +1,15 @@
-p
+.anatolycore
 {
-    color: red;
+    text-align: center;
+    animation: rgbAnimation 3s infinite linear;
+    justify-content: center;
+
+}
+
+
+@keyframes rgbAnimation {
+  0%   { color: rgb(255, 0, 0); }    /* Красный */
+  33%  { color: rgb(0, 255, 0); }    /* Зеленый */
+  66%  { color: rgb(0, 0, 255); }    /* Синий */
+  100% { color: rgb(255, 0, 0); }    /* Снова красный */
 }
