@@ -3,7 +3,22 @@
     text-align: center;
     animation: rgbAnimation 3s infinite linear;
     justify-content: center;
-
+}
+.creator_link
+{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+}
+.creator_link:hover
+{
+    color:rgb(58, 58, 58);
+}
+#creator_link_summer
+{
+  color:black;
+  text-align: center;
+  cursor: pointer;
 }
 
 
