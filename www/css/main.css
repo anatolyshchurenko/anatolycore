@@ -20,7 +20,10 @@
   text-align: center;
   cursor: pointer;
 }
-
+body 
+{
+  background: rgb(223, 223, 223);
+}
 
 @keyframes rgbAnimation {
   0%   { color: rgb(255, 0, 0); }    /* Красный */
