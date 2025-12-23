@@ -1,6 +1,7 @@
 <!-- made by mr_chronica -->
 <!DOCTYPE html>
 <html lang="ru">  
+
   <head>
     <meta charset = "utf-8">
     <meta name="author" content="mr_chronica">
@@ -11,22 +12,52 @@
   </head> 
 
   <body> 
-    <div><p title="РПС В ЗДАНИИ ДЕТКА!"><b><big>anatolycore</big></b></p><hr></div>
+    <div>
+      <p title="РПС В ЗДАНИИ ДЕТКА!"><b><big>anatolycore</big></b></p><hr>
+    </div>
 
-    <div><p title="очень крутой">это<b><i> крутой сайт</i></b></p><hr></div>
+    <div>
+      <p title="очень крутой">это<b><i> крутой сайт</i></b></p><hr>
+    </div>
 
     <div><p>планы на день:<p>
-    <ol type="I">
-      <li title="ммм, зубки">почистить зубы</li>
-      <li title="НЕНАВИЖУ">сходить в шарагу</li>
-      <li title="уля ля">программировать</li>
-    </ol><hr></div>
+      <ol type="I">
+        <li title="ммм, зубки">почистить зубы<input type="checkbox"></li>
+        <li title="НЕНАВИЖУ">сходить в шарагу<input type="checkbox"></li>
+        <li title="уля ля">программировать<input type="checkbox"></li>
+      </ol><hr>
+    </div>
 
-    <div><ul>
-      <li><a>конюшня лости</a></li>
-    </ul>
-    <img src="https://clck.ru/3Qxdk3" 
-      width="150px" height="150" alt="тут была конюшня, но видимо у вас что то пошло не так((("><hr></div>
+    <div>
+      <ul>
+      <li><a><b>конюшня лости</b></a></li>
+      </ul>
+      <div>
+        <form action="" method="post">
+          <label for="001">Впишите способ казни</label>
+          <input name="execution" id="001" type="text" placeholder="желательно мучительный" maxlength="22">
+        </form>
+      </div> 
+      <img src="photo/losti.gif" width="150px" height="150" alt="тут была конюшня, но видимо у вас что то пошло не так((("><hr><!-- гифка с лости -->
+    </div>
+
+    <div>
+        <p><b>--> регистрация <--</b></p>
+        <label title="введите свой логин" for="002">логин</label> <input name="user_email" id="002" type="email" placeholder="введите свой логин" maxlength="22"><br><br>
+        <label title="введите свой пароль" for="003">пароль</label> <input name="user_password" id="003" type="password" placeholder="введите свой пароль" maxlength="20"><br><br> 
+        <label title="введите свою дату рождения" for="004">дата рождения</label> <input name="user_age" id="004" type="date"><hr>
+    </div>
+
+    <div>
+      <p><b>выберите из предложенного:</b></p>
+      <p>я здоровый человек <input type="radio" name="normal_guy"></p>
+      <p>мне нравятся фурри <input type="radio" name="normal_guy" ></p> 
+      <img src="photo/fr33fri3nd.png" width="80px" height="80" alt="фрифренд следит за вами..."><!-- удивленный фрифренд -->
+      <audio controls>
+        <source src="audio/pippucka - sad amber perfume.mp3"></audio>
+    </div>
+
+    
 
 <!-- подключение js-ки -->
   <script scr="js/main.js"></script>
