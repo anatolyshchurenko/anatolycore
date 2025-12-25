@@ -1,1 +1,21 @@
 /* made by mr.chronica */
+
+.main_text
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.712) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.616) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+.main_text:hover 
+{
+    cursor: pointer;
+}
+
+div execution input:focus{color:red}
