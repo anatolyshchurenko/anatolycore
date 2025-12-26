@@ -1,10 +1,15 @@
 /* made by mr.chronica */
+@import "https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap";
 
+body {
+    background-color: rgb(41, 41, 41);
+    color: rgb(219, 219, 219);
+}
 .main_text
 {
     font-size: 20px;
     text-transform: uppercase;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.712) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.616) 100%);
+    background: linear-gradient(90deg, rgba(206, 206, 206, 0.712) 0%, rgb(255, 255, 255) 50%, rgba(226, 226, 226, 0.616) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0B2349;
@@ -18,4 +23,3 @@
     cursor: pointer;
 }
 
-div execution input:focus{color:red}
