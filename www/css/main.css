@@ -1,10 +1,12 @@
 /* made by mr.chronica */
 @import "https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap";
 
+
 body {
-    background-color: rgb(41, 41, 41);
-    color: rgb(219, 219, 219);
+    background:rgb(41, 41, 41);
+    color: rgb(219, 219, 219); 
 }
+
 .main_text
 {
     font-size: 20px;
@@ -23,3 +25,14 @@ body {
     cursor: pointer;
 }
 
+#first 
+{
+    background: url('https://instapik.ru/wp-content/uploads/2020/10/privet-10.jpg') no-repeat center top;
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#second 
+{
+
+}
