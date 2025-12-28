@@ -1,11 +1,13 @@
 /* made by mr.chronica */
-@import "https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
 
 
 body {
     background:rgb(41, 41, 41);
-    color: rgb(219, 219, 219); 
+    color: whitesmoke; 
     text-align: center;
+    font-family: "TikTok Sans", sans-serif;
+    word-spacing: 5px;
 }
 
 .main_text
@@ -34,7 +36,24 @@ body {
     background-attachment: fixed;
 }
 
-    #cool_web
+#cool_web
 {
     font-size: 1.4em;
+}
+
+#required
+{
+    background: whitesmoke;
+    border: 3px solid rgb(19, 19, 19);
+    border-radius: 15px;
+    width: 200px;
+    height: 100px;
+    resize: none;
+}
+#required_button
+{
+    text-transform: uppercase;
+    background: rgb(19, 19, 19);
+    color: whitesmoke;
+    border-radius: 5px;
 }
