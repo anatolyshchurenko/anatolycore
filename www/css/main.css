@@ -8,6 +8,7 @@ body {
     text-align: center;
     font-family: "TikTok Sans", sans-serif;
     word-spacing: 5px;
+    text-transform: lowercase;
 }
 
 .main_text
@@ -21,6 +22,7 @@ body {
     display: table;
     margin: 20px auto;
     text-decoration: none;
+    text-shadow: 0 0px 10px rgba(255, 255, 255, 0.356);
 }
 
 .main_text:hover 
@@ -39,21 +41,62 @@ body {
 #cool_web
 {
     font-size: 1.4em;
+    text-shadow: 0 0px 10px rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 #required
 {
-    background: whitesmoke;
+    background: rgb(39, 39, 39);
     border: 3px solid rgb(19, 19, 19);
     border-radius: 15px;
     width: 200px;
     height: 100px;
     resize: none;
+    padding: 10px;
+    color: whitesmoke;
 }
-#required_button
+
+::placeholder 
+{
+  color: rgb(196, 196, 196);
+  text-align: center;
+}
+
+#required::placeholder 
+{
+  padding: 30px;
+}
+  
+
+.required_button
 {
     text-transform: uppercase;
+    font-weight: bold;
     background: rgb(19, 19, 19);
     color: whitesmoke;
-    border-radius: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
 }
+.required_button:hover {
+    box-shadow: 0 0px 10px rgb(0, 0, 0);   
+}
+.input 
+{
+    background: rgb(22, 22, 22);
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    padding: 2px;
+    color: whitesmoke;
+}
+#execution
+{
+    text-transform: uppercase;
+}
+#execution::placeholder
+{
+    text-transform:lowercase;
+}
+
