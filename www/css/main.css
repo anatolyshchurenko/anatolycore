@@ -1,14 +1,23 @@
 /* made by mr.chronica */
 @import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
 
+.bg {
+    position: fixed;
+    inset: 0;
+    background: rgb(43, 43, 43) center / cover no-repeat;
+    filter: blur(10px) saturate(0) ;
+    
+    
+    transform: scale(1.05);
+    z-index: -1;
+}
 
 body {
-    background:rgb(41, 41, 41);
     color: whitesmoke; 
     text-align: center;
     font-family: "TikTok Sans", sans-serif;
     word-spacing: 5px;
-    text-transform: lowercase;
+    text-transform: lowercase; 
 }
 
 .main_text
@@ -28,14 +37,6 @@ body {
 .main_text:hover 
 {
     cursor: pointer;
-}
-
-#first 
-{
-    background: url('https://instapik.ru/wp-content/uploads/2020/10/privet-10.jpg') no-repeat center top;
-    height: 50vh;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #cool_web
@@ -78,9 +79,16 @@ body {
     border-radius: 30px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease;
 }
 .required_button:hover {
-    box-shadow: 0 0px 10px rgb(0, 0, 0);   
+    box-shadow: 0 0px 10px rgb(0, 0, 0);  
+    transform: translateY(-2px); 
+    transition: all 0.3s ease;
+}
+.required_button:active {
+    transform: translateY(0);
+    transition: all 0.3s ease;
 }
 .input 
 {
