@@ -18,11 +18,12 @@ body {
     font-family: "TikTok Sans", sans-serif;
     word-spacing: 5px;
     text-transform: lowercase; 
+    font-size: 200%;
 }
 
 .main_text
 {
-    font-size: 20px;
+    font-size: 50px;
     text-transform: uppercase;
     background: linear-gradient(90deg, rgba(206, 206, 206, 0.712) 0%, rgb(255, 255, 255) 50%, rgba(226, 226, 226, 0.616) 100%);
     -webkit-background-clip: text;
@@ -32,6 +33,7 @@ body {
     margin: 20px auto;
     text-decoration: none;
     text-shadow: 0 0px 10px rgba(255, 255, 255, 0.356);
+    
 }
 
 .main_text:hover 
@@ -51,8 +53,8 @@ body {
     background: rgb(39, 39, 39);
     border: 3px solid rgb(19, 19, 19);
     border-radius: 15px;
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 200px;
     resize: none;
     padding: 10px;
     color: whitesmoke;
@@ -67,11 +69,13 @@ body {
 #required::placeholder 
 {
   padding: 30px;
+  font-size: 200%;
 }
   
 
 .required_button
 {
+    font-size: 100%;
     text-transform: uppercase;
     font-weight: bold;
     background: rgb(19, 19, 19);
@@ -92,6 +96,7 @@ body {
 }
 .input 
 {
+    font-size: 100%;
     background: rgb(22, 22, 22);
     border: none;
     border-radius: 5px;
@@ -107,4 +112,9 @@ body {
 {
     text-transform:lowercase;
 }
+#losti{
+    width: 400px;
+    height: 400px;
+}
+
 
