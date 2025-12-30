@@ -1,6 +1,6 @@
 <!-- made by mr_chronica -->
 <!DOCTYPE html>
-<html lang="ru">  
+<html lang="ru"> 
 
   <head>
     <meta charset = "utf-8">
@@ -13,18 +13,25 @@
 
   <body> 
     <div class="bg"></div>
-    <header>
-      <a href="https://t.me/anatoly_shchurenko" target="_blank" title="РПС В ЗДАНИИ ДЕТКА!" class="main_text"><b><big>anatolycore</big></b></a><hr>
-    </header>
-    <br>
-    <main>
-      <div>
-        <form>
-          <textarea required id="required" maxlength="500" placeholder="расскажи как у тебя дела（＾ω＾）"></textarea>
-          <br><button class="required_button">Отправить</button>
-        </form>
-        <hr>
+      <div class="main">
+        <header class="header">
+        <a href="https://t.me/anatoly_shchurenko" target="_blank" title="РПС В ЗДАНИИ ДЕТКА!" ><b><big>anatolycore</big></b></a>
+        </header>
+        <div class="header_double">инфо</div>
+        <div class="header_double">главная страница</div>
+        <div class="header_double">последние ветки</div>
+        <div class="header_double">автор</div>
       </div>
+      <hr>
+      <br>
+      <main>
+        <div>
+          <form>
+            <textarea required id="required" maxlength="500" placeholder="расскажи как у тебя дела（＾ω＾）"></textarea>
+            <br><button class="required_button">Отправить</button>
+          </form>
+          <hr>
+    </div>
       
 
       <div>
@@ -43,7 +50,7 @@
         <div>
           <form action="" method="post">
             <label for="001">Впишите способ казни</label>
-            <input style="color:red" class="input" id="execution" type="text" placeholder="желательно мучительный" maxlength="22"><hr>
+            <input class="input" id="execution" type="text" placeholder="желательно мучительный" maxlength="22"><hr>
           </form>
         </div> 
       </div>
@@ -51,9 +58,9 @@
       <div>
         <form>
           <p><b>--> регистрация <--</b></p>
-          <label name="registation" title="введите свой логин">логин</label> <input class="input" name="user_email" type="email" placeholder="введите свой логин" maxlength="22"><br><br>
+          <label name="registation" title="введите свой логин">эл. почта</label> <input class="input" name="user_email" type="email" placeholder="введите свой логин" maxlength="22"><br><br>
           <label name="registation" title="введите свой пароль">пароль</label> <input class="input" name="user_password" type="password" placeholder="введите свой пароль" maxlength="20"><br><br>
-          <button name="registation" class="required_button">Зарегистрировать</button>
+          <button name="registation" class="required_button">Зарегистрироваться</button>
           <br><hr>
         </form>
       </div>
@@ -65,7 +72,7 @@
         <p><b>прекрасный трек...</b></p>
         <audio controls class="audio">
           <source src="audio/pippucka - sad amber perfume.mp3"></audio><br>
-        <a class="reactions">реакции критиков:</a>
+        <a id="reactions">реакции критиков:</a>
         <img src="photo/fr33fri3nd.png" width="80px" height="80px" alt="фрифренд следит за вами..."><!-- удивленный фрифренд -->
       </div>
     </main>
