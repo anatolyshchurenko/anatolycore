@@ -1,17 +1,22 @@
 /* made by mr.chronica */
 @import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
-
+html
+{
+    zoom: 1;
+    -webkit-text-size-adjust: 100%;
+} 
+a {
+    color: inherit;
+    text-decoration: none;
+}
 .bg {
     position: fixed;
     inset: 0;
     background: rgb(43, 43, 43) center / cover no-repeat;
     filter: blur(10px) saturate(0) ;
-    
-    
     transform: scale(1.05);
     z-index: -1;
 }
-
 body {
     color: whitesmoke; 
     text-align: center;
@@ -20,22 +25,17 @@ body {
     text-transform: lowercase; 
     font-size: 200%;
 }
-
-.main_text
+.header
 {
+    width: 100%;
+    height: 80px;
+    text-align: center;
     font-size: 50px;
     text-transform: uppercase;
-    background: linear-gradient(90deg, rgba(206, 206, 206, 0.712) 0%, rgb(255, 255, 255) 50%, rgba(226, 226, 226, 0.616) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #0B2349;
-    display: table;
-    margin: 20px auto;
-    text-decoration: none;
+    color: #fff; 
     text-shadow: 0 0px 10px rgba(255, 255, 255, 0.356);
     
 }
-
 .main_text:hover 
 {
     cursor: pointer;
@@ -58,8 +58,9 @@ body {
     resize: none;
     padding: 10px;
     color: whitesmoke;
+    position: relative;
+    bottom: +20px;
 }
-
 ::placeholder 
 {
   color: rgb(196, 196, 196);
@@ -70,15 +71,17 @@ body {
 {
   padding: 30px;
   font-size: 200%;
+  position: relative;
+  bottom: -30px;
 }
-  
-
 .required_button
 {
-    font-size: 100%;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404);
+    font-size: 80%;
     text-transform: uppercase;
     font-weight: bold;
-    background: rgb(19, 19, 19);
+    padding: 0.5%;
+    background: rgb(53, 53, 53);
     color: whitesmoke;
     border-radius: 30px;
     cursor: pointer;
@@ -116,5 +119,54 @@ body {
     width: 400px;
     height: 400px;
 }
+#reactions
+{
+    position: relative;
+    bottom: +25px;
+}
 
+#execution
+{ 
+    font-weight: bold;
+    color: red;
+}
+#execution::placeholder
+{ 
+    font-weight: normal;
+}
 
+.header_double
+{
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404); 
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.466);
+    font-weight: 500;
+    display: flex;
+    width: 20%;
+    height: 40px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px;
+    margin: 2.25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    font-size: 48%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -10px;
+    transition: all 0.3s ease;
+}
+.header_double:hover 
+{
+    transform: translateY(-5px); 
+    transition: all 0.3s ease;
+}
+.header_double:active 
+{
+    transform: translateY(0);
+    transition: all 0.3s ease;
+} 
+.main
+{
+    height: 140px;
+}
