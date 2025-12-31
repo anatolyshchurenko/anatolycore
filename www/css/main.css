@@ -4,6 +4,7 @@ html
 {
     zoom: 1;
     -webkit-text-size-adjust: 100%;
+    background-color: rgb(43, 43, 43);
 } 
 a {
     color: inherit;
@@ -155,6 +156,7 @@ body {
     position: relative;
     bottom: -10px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 .header_double:hover 
 {
@@ -169,4 +171,21 @@ body {
 .main
 {
     height: 140px;
+}
+#howareu 
+{
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+::-webkit-scrollbar
+{
+    width: 5px;
+    
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 30px;
+    background:rgb(255, 255, 255);
+    box-shadow:0 2px 20px rgba(255, 255, 255, 0.466);
 }
