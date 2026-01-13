@@ -22,6 +22,7 @@ a
     }
 body 
     {
+        user-select: none;
         color: whitesmoke; 
         text-align: center;
         font-family: "TikTok Sans", sans-serif;
