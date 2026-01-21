@@ -29,6 +29,7 @@ body
         word-spacing: 5px;
         text-transform: lowercase; 
         font-size: 200%;
+        margin: 0;
     }
 .header
     {
@@ -89,6 +90,7 @@ body
         cursor: pointer;
         border: none;
         transition: all 0.3s ease;
+        margin-top: 10px;
     }
 .required_button:hover 
     {
@@ -139,7 +141,7 @@ body
         height: 40px;
         background-color: rgb(53, 53, 53);
         border-radius: 10px; 
-        margin: 2.25%;
+        margin: 2.5%;
         margin-top: 0;
         margin-bottom: 0;
         float: left;
@@ -181,20 +183,22 @@ body
     }
 #h_info
 {
+    opacity: 0;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404); 
     text-shadow: 0 2px 20px rgba(255, 255, 255, 0.466);
     font-weight: 500;
-    display: none;
+    display: flex;
     /* Изменяемые размеры */
-    
     min-height: 200px; /* Минимальная высота */
     background-color: rgb(53, 53, 53);
     border-radius: 10px; 
     /* Позиционирование */
-    position: relative; /* вместо absolute/relative */
-    
-    
-    
+    position: relative;
+    float: right; 
+    width: 20% !important; 
+    margin: 2.5%;
+    margin-top: 20px;
+    margin-bottom: 0;
     /* Отступы и выравнивание */
     padding: 20px;
     z-index: 9999;
@@ -213,25 +217,27 @@ body
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     box-sizing: border-box; 
+    float: left; 
 }
 #h_author
 {
+    opacity: 0;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404); 
     text-shadow: 0 2px 20px rgba(255, 255, 255, 0.466);
     font-weight: 500;
-    display: none;
+    display: flex;
     /* Изменяемые размеры */
-    
     min-height: 200px; /* Минимальная высота */
     background-color: rgb(53, 53, 53);
     border-radius: 10px; 
     /* Позиционирование */
-    position: relative; /* вместо absolute/relative */
-    
-     
-    
+    position: relative; 
+    float: right; 
+    width: 20% !important; 
+    margin: 2.5%;
+    margin-top: 20px;
+    margin-bottom: 0;
     /* Отступы и выравнивание */
-    
     padding: 20px;
     z-index: 9999;
     text-align: center;
@@ -251,13 +257,5 @@ body
     box-sizing: border-box; 
 }
 
-.header_treaple 
-{
-    width: 20% !important; 
-    margin: 2.25%;
-    margin-top: 2%;
-    margin-bottom: 0;
-    float: left
-}
 
 
