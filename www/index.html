@@ -12,7 +12,9 @@
   </head> 
 
   <body> 
+    
     <div class="bg"></div>
+    <!-- верхние кнопки -->
       <div class="main">
         <header class="header">
         <p><b><big>anatolycore</big></b></p>
@@ -20,7 +22,7 @@
         <div onclick="infoButton()" id="info" class="header_double"><p id="header_info_text">инфо</p></div>
         <div class="header_double">главная страница</div>
         <div class="header_double">последние ветки</div>
-        <div onclick="authorButton()" class="header_double">автор</div>
+        <div onclick="authorButton()" id="author" class="header_double">автор</div>
         <div class="header_treaple" id="h_info">Данный сайт являет <b>полностью анонимным</b> имиджбордом нацеленным для саундклауд исполнителей. Правила: будьте адекватными (реклама, оскорбления, агрессия, пошлости, мерзости, деаноны, политика = нельзя)</div>
         <div align="right" class="header_treaple" id="h_author">
           <p>mr. chronica</p>
@@ -29,61 +31,30 @@
           <a href="https://discord.gg/uUfEdK9wmH" target="_blank"><b>discord</b></a>
           <a href="https://github.com/anatolyshchurenko" target="_blank"><b>github</b></a>
         </div>
-      
       </div>
     <hr>
     <br>
       <main>
+    <!-- создание поста -->
         <div>
           <form>
             <textarea required id="required" maxlength="500" placeholder="расскажи как у тебя дела（＾ω＾）"></textarea>
-            <br><button id="howareu" class="required_button">Отправить</button>
+            <br><button class="required_button">Отправить</button>
           </form>
-          <hr>
+          <hr color=black style="opacity: 0.4;">
         </div>
-      
-
+    <!-- регистрация на сайт -->
         <div>
-          <p title="очень крутой">это  <b><i id="cool_web">крутой сайт</i></b></p><hr>
-        </div>
-
-        <div><p>планы на день:<p>
-            <p title="ммм, зубки">почистить зубы<input type="checkbox"></p>
-            <p title="НЕНАВИЖУ">сходить в шарагу<input type="checkbox"></p>
-            <p title="уля ля">программировать<input type="checkbox"></p><hr>
-        </div>
-
-        <div>
-          <a><b>конюшня лости</b></a><br>
-          <img id="losti" src="photo/losti.gif" width="150px" height="150" alt="тут была конюшня, но видимо у вас что то пошло не так((("><!-- гифка с лости -->
-          <div>
-            <form action="" method="post">
-              <label for="001">Впишите способ казни</label>
-              <input class="input" id="execution" type="text" placeholder="желательно мучительный" maxlength="22"><hr>
-            </form>
-          </div> 
-        </div>
-
-        <div>
-          <form>
-            <p><b>--> регистрация <--</b></p>
-            <label name="registation" title="введите свой логин">эл. почта</label> <input class="input" name="user_email" type="email" placeholder="введите свой логин" maxlength="22"><br><br>
-            <label name="registation" title="введите свой пароль">пароль</label> <input class="input" name="user_password" type="password" placeholder="введите свой пароль" maxlength="20"><br><br>
-            <button name="registation" class="required_button">Зарегистрироваться</button>
-            <br><hr>
+          <form id="regist_form">
+            <p style="text-shadow: 0 0px 10px rgba(255, 255, 255, 0.356);"><b>регистрация</b></p>
+            <label class="registation"></label> <input id="email" class="input" name="user_email" type="email" placeholder="почта" maxlength="22"><br><br>
+            <label class="registation"></label> <input id="password" class="input" name="user_password" type="password" placeholder="пароль" maxlength="20"><br><br>
+            <label class="registation"></label> <input id="name" class="input" name="user_login" type="text" placeholder="логин" maxlength="22"><br><br>
+            <button id="regist_button" type="submit" class="required_button">Зарегистрироваться</button>
+            <br>
           </form>
         </div>
-
-        <div>
-          <p><b>выберите из предложенного:</b></p>
-          <p>я здоровый человек <input class="normal_guy" type="radio" name="normal_guy"></p>
-          <p>мне нравятся фурри <input class="normal_guy" type="radio" name="normal_guy" ></p><hr>
-          <p><b>прекрасный трек...</b></p>
-          <audio controls class="audio">
-          <source src="audio/pippucka - sad amber perfume.mp3"></audio><br>
-          <a id="reactions">реакции критиков:</a>
-          <img src="photo/fr33fri3nd.png" width="80px" height="80px" alt="фрифренд следит за вами..."><!-- удивленный фрифренд -->
-        </div>
+        <br>
       </main>
     <!-- подключение js-ки -->
     <noscript>Включите JavaScript!!!</noscript>
