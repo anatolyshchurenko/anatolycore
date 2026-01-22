@@ -62,7 +62,7 @@ body
         color: whitesmoke;
         bottom: +20px;
         
-        
+
     }
 ::placeholder 
     {
@@ -79,8 +79,8 @@ body
     }
 .required_button
     {
-        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404);
-        font-size: 80%;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404) !important;
+        font-size: 80% !important;
         text-transform: uppercase;
         font-weight: bold;
         padding: 0.5%;
@@ -91,6 +91,7 @@ body
         border: none;
         transition: all 0.3s ease;
         margin-top: 10px;
+        display: inline-block;
     }
 .required_button:hover 
     {
@@ -168,12 +169,7 @@ body
         transition: all 0.3s ease;
     } 
 .main {height: 140px}
-#howareu 
-    {
-        text-align: center;
-        position: relative;
-        bottom: 10px;
-    }
+
 ::-webkit-scrollbar {width: 5px} 
 ::-webkit-scrollbar-thumb
     {
