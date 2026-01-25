@@ -1,5 +1,8 @@
 /* made by mr.chronica */
+/* ===== ИМПОРТ ШРИФТОВ ===== */
 @import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+/* ===== ГЛОБАЛЬНЫЕ СТИЛИ ===== */
 html
     {
         zoom: 1;
@@ -30,7 +33,17 @@ body
         text-transform: lowercase; 
         font-size: 200%;
         margin: 0;
+        overflow-x: hidden;
+        transition: all 0.3s ease;
     }
+::-webkit-scrollbar {width: 5px} 
+::-webkit-scrollbar-thumb
+    {
+        border-radius: 30px;
+        background:rgb(255, 255, 255);
+        box-shadow:0 2px 20px rgba(255, 255, 255, 0.466);
+    }
+/* ===== ШАПКА ===== */
 .header
     {
         width: 100%;
@@ -42,13 +55,7 @@ body
         text-shadow: 0 0px 10px rgba(255, 255, 255, 0.356);
         transform: translateY(-20px);
     }
-.main_text:hover {cursor: pointer}
-#cool_web
-    {
-        font-size: 1.4em;
-        text-shadow: 0 0px 10px rgb(255, 255, 255);
-        cursor: pointer;
-    }
+/* ===== ОСНОВНАЯ ФОРМА ===== */
 
 #required
     {
@@ -56,20 +63,21 @@ body
         border: 3px solid rgb(19, 19, 19);
         border-radius: 15px;
         width: 400px;
+        max-width: 400px;
+        min-width: 300px;
         height: 200px;
         resize: none;
         padding: 10px;
         color: whitesmoke;
         bottom: +20px;
-        
-
+        margin: 0 auto; 
+        display: block;
     }
 ::placeholder 
     {
         color: rgb(196, 196, 196);
         text-align: center;
     }
-
 #required::placeholder 
     {
         padding: 30px;
@@ -90,8 +98,8 @@ body
         cursor: pointer;
         border: none;
         transition: all 0.3s ease;
-        margin-top: 10px;
-        display: inline-block;
+        margin: 10px auto;
+        display: block;
     }
 .required_button:hover 
     {
@@ -114,25 +122,8 @@ body
         padding: 2px;
         color: whitesmoke;
     }
-#execution {text-transform: uppercase}
-#execution::placeholder {text-transform:lowercase}
-#losti
-    {
-        width: 400px;
-        height: 400px;
-    }
-#reactions
-    {
-        position: relative;
-        bottom: +25px;
-    }
-#execution
-    { 
-        font-weight: bold;
-        color: red;
-    }
-#execution::placeholder {font-weight: normal}
-.header_double /* кнопки под логотипом */
+/* ===== КНОПКИ В ШАПКЕ ===== */
+.header_double 
     {
         box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404); 
         text-shadow: 0 2px 20px rgba(255, 255, 255, 0.466);
@@ -170,13 +161,6 @@ body
     } 
 .main {height: 140px}
 
-::-webkit-scrollbar {width: 5px} 
-::-webkit-scrollbar-thumb
-    {
-        border-radius: 30px;
-        background:rgb(255, 255, 255);
-        box-shadow:0 2px 20px rgba(255, 255, 255, 0.466);
-    }
 #h_info
 {
     opacity: 0;
@@ -190,16 +174,15 @@ body
     border-radius: 10px; 
     /* Позиционирование */
     position: relative;
-    float: right; 
+    float: left; 
     width: 20% !important; 
     margin: 2.5%;
     margin-top: 20px;
     margin-bottom: 0;
     /* Отступы и выравнивание */
-    padding: 20px;
     z-index: 9999;
     text-align: center;
-    padding: 0, 2%;
+    padding: 2%;
     /* Для текста внутри */
     align-items: center;
     justify-content: center;
@@ -213,7 +196,6 @@ body
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     box-sizing: border-box; 
-    float: left; 
 }
 #h_author
 {
@@ -252,6 +234,17 @@ body
     overflow-wrap: break-word; 
     box-sizing: border-box; 
 }
-
+#post 
+{
+    display: flex;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+}
 
 
