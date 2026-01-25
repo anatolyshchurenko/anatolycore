@@ -1,63 +1,186 @@
 <!-- made by mr_chronica -->
 <!DOCTYPE html>
-<html lang="ru"> 
+<html lang="ru">
 
-  <head>
-    <meta charset = "utf-8">
+<head>
+    <!-- Мета-информация -->
+    <meta charset="utf-8">
     <meta name="author" content="mr_chronica">
-    <meta name="description" content="anatolycore"
-    <meta name="keywords" content="anatolycore">
-    <title>anatolycore</title>
-    <link rel="stylesheet" href="css/main.css"> 
-  </head> 
-
-  <body> 
+    <meta name="description" content="anatolycore - анонимная имиджборда для SoundCloud исполнителей">
+    <meta name="keywords" content="имиджборд, soundcloud, музыка, анонимный, anatolycore">
+    <!-- Для корректного отображения на мобильных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <div class="bg"></div>
-    <!-- верхние кнопки -->
-      <div class="main">
+    <title>anatolycore</title>
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Основной контейнер -->
+    <div class="main">
+        
+        <!-- Шапка сайта -->
         <header class="header">
-        <p><b><big>anatolycore</big></b></p>
+            <!-- Заголовок сайта -->
+            <p><b><big>anatolycore</big></b></p>
         </header>
-        <div onclick="infoButton()" id="info" class="header_double"><p id="header_info_text">инфо</p></div>
-        <div class="header_double">главная страница</div>
-        <div class="header_double">последние ветки</div>
-        <div onclick="authorButton()" id="author" class="header_double">автор</div>
-        <div class="header_treaple" id="h_info">Данный сайт являет <b>полностью анонимным</b> имиджбордом нацеленным для саундклауд исполнителей. Правила: будьте адекватными (реклама, оскорбления, агрессия, пошлости, мерзости, деаноны, политика = нельзя)</div>
-        <div align="right" class="header_treaple" id="h_author">
-          <p>mr. chronica</p>
-          <a href="https://t.me/anatoly_shchurenko" target="_blank"><b>telegram</b></a>
-          <a href="https://soundcloud.com/anatolyshchurenko" target="_blank"><b>soundcloud</b></a>
-          <a href="https://discord.gg/uUfEdK9wmH" target="_blank"><b>discord</b></a>
-          <a href="https://github.com/anatolyshchurenko" target="_blank"><b>github</b></a>
+
+        <!-- ===== НАВИГАЦИОННЫЕ КНОПКИ ===== -->
+
+        <!-- Кнопка "Инфо" - открывает информацию о сайте -->
+        <div onclick="infoButton()" id="info" class="header_double">
+            <p id="header_info_text">инфо</p>
         </div>
-      </div>
+        
+        <!-- Кнопка "Главная страница" -->
+        <div class="header_double">главная страница</div>
+        
+        <!-- Кнопка "Последние ветки" (обсуждения) -->
+        <div class="header_double">последние ветки</div>
+        
+        <!-- Кнопка "Автор" - открывает информацию об авторе -->
+        <div onclick="authorButton()" id="author" class="header_double">автор</div>
+
+        <!-- ===== ВСПЛЫВАЮЩИЕ БЛОКИ ===== -->
+        <!-- 
+          Эти блоки, вероятно, скрыты по умолчанию (opacity: 0 в CSS)
+          и появляются при нажатии на соответствующие кнопки
+        -->
+        <!-- Блок с информацией о сайте (+правила) -->
+        <div id="h_info">
+            Данный сайт являет <b>полностью анонимным</b> имиджбордом 
+            нацеленным для саундклауд исполнителей. 
+            <br><br>
+            <b>Правила:</b> будьте адекватными 
+            (реклама, оскорбления, агрессия, пошлости, 
+            мерзости, деаноны, политика = нельзя)
+        </div>
+        
+        <!-- Блок с информацией об авторе -->
+        <div align="right" id="h_author">
+            <div id="author_info">
+                <!-- Имя автора -->
+                <p>mr. chronica</p>
+                
+                <!-- Ссылки на социальные сети и профили -->
+                <a href="https://t.me/anatoly_shchurenko" target="_blank">
+                    <b>telegram</b>
+                </a><br>
+                
+                <a href="https://soundcloud.com/anatolyshchurenko" target="_blank">
+                    <b>soundcloud</b>
+                </a><br>
+                
+                <a href="https://discord.gg/uUfEdK9wmH" target="_blank">
+                    <b>discord</b>
+                </a><br>
+                
+                <a href="https://github.com/anatolyshchurenko" target="_blank">
+                    <b>github</b>
+                </a><br>
+            </div>
+        </div>
+        
+    </div><!-- Закрытие .main -->
     <hr>
     <br>
-      <main>
-    <!-- создание поста -->
-        <div>
-          <form>
-            <textarea required id="required" maxlength="500" placeholder="расскажи как у тебя дела（＾ω＾）"></textarea>
-            <br><button class="required_button">Отправить</button>
-          </form>
-          <hr color=black style="opacity: 0.4;">
+
+    <!-- Основное содержимое страницы -->
+    <main>
+        
+        <!-- ===== СЕКЦИЯ ДЛЯ СОЗДАНИЯ ПОСТА ===== -->
+        <div id="post">
+            <form class="form-container">
+                <!-- Текстовое поле для ввода поста -->
+                <textarea 
+                    required 
+                    id="required" 
+                    maxlength="500" 
+                    placeholder="расскажи как у тебя дела（＾ω＾）"
+                ></textarea>
+                
+                <br>
+                
+                <!-- Кнопка отправки поста -->
+                <button class="required_button" type="submit">
+                    Отправить
+                </button>
+            </form>
         </div>
-    <!-- регистрация на сайт -->
-        <div>
-          <form id="regist_form">
-            <p style="text-shadow: 0 0px 10px rgba(255, 255, 255, 0.356);"><b>регистрация</b></p>
-            <label class="registation"></label> <input id="email" class="input" name="user_email" type="email" placeholder="почта" maxlength="22"><br><br>
-            <label class="registation"></label> <input id="password" class="input" name="user_password" type="password" placeholder="пароль" maxlength="20"><br><br>
-            <label class="registation"></label> <input id="name" class="input" name="user_login" type="text" placeholder="логин" maxlength="22"><br><br>
-            <button id="regist_button" type="submit" class="required_button">Зарегистрироваться</button>
-            <br>
-          </form>
+
+        <!-- ===== СЕКЦИЯ РЕГИСТРАЦИИ ===== -->
+        <div class="form-container">
+            <form id="regist_form">
+                <!-- Заголовок формы регистрации -->
+                <p style="text-shadow: 0 0px 10px rgba(255, 255, 255, 0.356);">
+                    <b>регистрация</b>
+                </p>
+                
+                <!-- Поле для ввода email -->
+                <label class="registation"></label>
+                <input 
+                    id="email" 
+                    class="input" 
+                    name="user_email" 
+                    type="email" 
+                    placeholder="почта" 
+                    maxlength="22"
+                >
+                <br><br>
+                
+                <!-- Поле для ввода пароля -->
+                <label class="registation"></label>
+                <input 
+                    id="password" 
+                    class="input" 
+                    name="user_password" 
+                    type="password" 
+                    placeholder="пароль" 
+                    maxlength="20"
+                >
+                <br><br>
+                
+                <!-- Поле для ввода логина -->
+                <label class="registation"></label>
+                <input 
+                    id="name" 
+                    class="input" 
+                    name="user_login" 
+                    type="text" 
+                    placeholder="логин" 
+                    maxlength="22"
+                >
+                <br><br>
+                
+                <!-- Кнопка отправки формы регистрации -->
+                <button 
+                    id="regist_button" 
+                    type="submit" 
+                    class="required_button"
+                >
+                    Зарегистрироваться
+                </button>
+                <br>
+                
+            </form>
         </div>
+        
         <br>
-      </main>
-    <!-- подключение js-ки -->
-    <noscript>Включите JavaScript!!!</noscript>
+        
+    </main>
+
+    <!-- ===== СКРИПТЫ И ДОПОЛНИТЕЛЬНЫЕ ЭЛЕМЕНТЫ ===== -->
+    
+    <!-- Сообщение для пользователей с отключенным JavaScript -->
+    <noscript>
+        ⚠️ Включите JavaScript для работы сайта!
+    </noscript>
+    
+    <!-- Подключение основного JavaScript файла -->
     <script src="js/main.js"></script>
-  </body>  
+    
+</body>
+
 </html>
