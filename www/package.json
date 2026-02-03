@@ -1,0 +1,28 @@
+{
+  "name": "anatolycore",
+  "version": "1.0.0",
+  "description": "my social networks:\r -----------------------\r tg: anatolycore\r sc: anatolyshchurenko\r ig: anatoliishchurenko\r dc: anatoly_shchurenko\r -----------------------",
+  "keywords": [
+    "anatolycore"
+  ],
+  "homepage": "https://github.com/anatolyshchurenko/anatolycore#readme",
+  "bugs": {
+    "url": "https://github.com/anatolyshchurenko/anatolycore/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anatolyshchurenko/anatolycore.git"
+  },
+  "license": "ISC",
+  "author": "mr.chronica",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/standalone": "^7.29.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

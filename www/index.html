@@ -3,6 +3,11 @@
 <html lang="ru">
 
 <head>
+    <!-- React и ReactDOM (для версий 17 и ниже) -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel для преобразования JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!-- Мета-информация -->
     <meta charset="utf-8">
     <meta name="author" content="mr_chronica">
@@ -179,7 +184,9 @@
     </noscript>
     
     <!-- Подключение основного JavaScript файла -->
-    <script src="js/main.js"></script>
+    <script src="js/header.js" type="text/babel"></script>
+    <script src="js/test.js" type="text/babel"></script>
+    
     
 </body>
 
