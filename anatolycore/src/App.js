@@ -1,22 +1,18 @@
 import React, { useState } from "react";
-import Counter from "./components/Counter";
 import './styles/App.css'
-import PostItem from "./components/PostItem";
+import PostList from "./components/PostList";
+import PostUser from "./components/PostUser";
 function App() {
 
-  
-  const [value, setValue] = useState('anatolycore')
+  const [post] = useState([
+    {title: 'anatolycore', body:'привет', id:'0'},
+    {title: 'pippucka', body:'здарова!!!', id:'0'},
+    {title: 'fr33fr3ind', body:'йайа космос', id:'0'},
+  ])
   return (
     <div className="App">
-      
-      <h2>{value}</h2>
-      <input 
-        type="text" 
-        value={value}
-        onChange={event => setValue(event.target.value)}
-      />
-      <PostItem post={{title: 'anatolycore', body:'лучший сайт'}} />
-      <Counter/>
+      <PostUser/>
+      <PostList post={post} postlis='postlis'/>;
     </div> 
   );
 }
