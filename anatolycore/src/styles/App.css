@@ -11,12 +11,14 @@
 .App {
     width: 800px;
 }
-.post {
+.post{
     display: flex;
     padding: 15px;
     border: 2px solid black;
     margin-top: 15px;
-    justify-content: space-around;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.315);
 }
 button {
     display: flexbox;
