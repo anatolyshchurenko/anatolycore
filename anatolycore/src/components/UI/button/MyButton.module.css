@@ -1,0 +1,18 @@
+.myBtn {
+    width: 120px;
+    display: flexbox;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0px;
+    background-color: rgb(37, 0, 0);
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgba(255, 0, 0, 0.979);
+    font-weight: normal;
+    transition: all 0.3s ease;
+}
+.myBtn:hover {
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
