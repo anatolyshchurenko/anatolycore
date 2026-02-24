@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import './styles/App.css'
 import PostList from "./components/PostList";
-import PostUser from "./components/PostUser";
+
+import MyButton from "./components/UI/button/MyButton";
+import MyInput from "./components/UI/input/MyInput";
+import Logo from "./components/UI/logo/Logo";
 function App() {
 
   const [post] = useState([
@@ -11,8 +14,11 @@ function App() {
   ])
   return (
     <div className="App">
-      <PostUser/>
-      <PostList post={post} postlis='postlis'/>;
+      <Logo>anatolycore</Logo>
+      <MyInput type='text' placeholder='Название поста'/>
+      <MyInput type='text' placeholder='Описание поста'/>
+      <MyButton disabled>Опубликовать</MyButton>
+      <PostList post={post} postlis='postlist'/>
     </div> 
   );
 }
