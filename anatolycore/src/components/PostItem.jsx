@@ -8,7 +8,7 @@ const PostItem = (props) => {
                 <strong>{props.post.title}:</strong>
                 <div>{props.post.body}</div>
             </div>
-            <div className="post_del">
+            <div className="buttoNn">
                 <button style={{borderRadius: '15px', backgroundColor: 'black', color: 'white', border: 'none'}}>Удалить</button>
             </div>
         </div>
