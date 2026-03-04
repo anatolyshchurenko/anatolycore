@@ -1,24 +1,34 @@
-import React, { useState } from "react";
-import './styles/App.css'
-import PostList from "./components/PostList";
-
-import MyButton from "./components/UI/button/MyButton";
-import MyInput from "./components/UI/input/MyInput";
-import Logo from "./components/UI/logo/Logo";
+import React from "react";
+import './Styles/App.css'
+import Logo from "./components/UI/Header/Logo/Logo";
+import Navigations from "./components/UI/Header/Navigations/Navigations";
+import DesInfo from "./components/UI/Header/Navigations/DesInfo";
+import AuthorInfo from "./components/Other/AuthorInfo";
 function App() {
 
-  const [post] = useState([
-    {title: 'anatolycore', body:'привет', id:'0'},
-    {title: 'pippucka', body:'здарова!!!', id:'0'},
-    {title: 'fr33fr3ind', body:'йайа космос', id:'0'},
-  ])
+
+
   return (
     <div className="App">
-      <Logo>anatolycore</Logo>
-      <MyInput type='text' placeholder='Название поста'/>
-      <MyInput type='text' placeholder='Описание поста'/>
-      <MyButton disabled>Опубликовать</MyButton>
-      <PostList post={post} postlis='postlist'/>
+      {/* главный логотип */}
+      <Logo logoText='anatolycore'/>
+
+      {/* кнопки навигации */}
+      <Navigations>инфо</Navigations>
+      <Navigations>главная страница</Navigations>
+      <Navigations>последние ветки</Navigations>
+      <Navigations>автор</Navigations>  
+
+      {/* текст внутри блоков навигации */}
+      <DesInfo InfoSpace={
+        <div>
+          Данный сайт являет <b>полностью анонимным</b> имиджбордом 
+          нацеленным для саундклауд исполнителей
+        </div>
+      }/>
+      <DesInfo/>
+      <DesInfo/>
+      <DesInfo InfoSpace={<AuthorInfo/>}/>
     </div> 
   );
 }
