@@ -1,0 +1,65 @@
+.myDescription
+    {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404); 
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.466);
+    font-weight: 600;
+    display: flex;
+    width: 20%;
+    height: 40px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px; 
+    margin: 2.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    font-size: 60%;
+    align-self:baseline;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    box-sizing: border-box;
+    }
+.myDescription:hover 
+    {
+        transform: translateY(-5px); 
+        transition: all 0.3s ease;
+    }
+.myDescription:active 
+    {
+        transform: translateY(0);
+        transition: all 0.3s ease;
+    } 
+
+.desInfo {
+    display: flex;           
+    align-items: center;     
+    justify-content: center; 
+    text-align: center;      
+    opacity: 1;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404); 
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.466);
+    font-weight: 500;
+    min-height: 200px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px; 
+    position: relative;
+    float: left; 
+    width: 20% !important; 
+    margin: 2.5%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    z-index: 9999;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    box-sizing: border-box; 
+}
