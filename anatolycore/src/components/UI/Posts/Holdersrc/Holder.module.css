@@ -1,0 +1,58 @@
+.newPost {
+    display: flexbox;           
+    align-items: center;     
+    justify-content: center; 
+    text-align: center;      
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404); 
+    font-weight: 500;
+    min-height: 200px;
+    background-color: rgb(53, 53, 53); 
+
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    box-sizing: border-box;
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 15px;
+    width: 400px !important;
+    max-width: 400px;
+    min-width: 300px;
+    height: 200px;
+    resize: none; 
+    padding: 70px;
+    overflow: auto;
+    margin: 10px;
+}
+.newPost:focus {
+    outline: none;
+}
+
+/* Тонкий скролл 3px */
+.newPost::-webkit-scrollbar {
+    width: 3px;
+    background: transparent;
+}
+
+.newPost::-webkit-scrollbar-track {
+    background: #3a3a3a;
+    border-radius: 10px;
+    margin: 10px 0 10px 5px; /* сдвиг влево на 5px */
+}
+
+.newPost::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    min-height: 40px;
+}
+
+.newPost::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* Добавляем невидимую область для захвата скролла */
+.newPost::-webkit-scrollbar-button {
+    display: none;
+}
