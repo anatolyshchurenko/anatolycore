@@ -7,8 +7,14 @@ import AuthorInfo from "./components/Other/AuthorInfo";
 import InfoSpaceText from "./components/Other/InfoSpaceText";
 import Holder from "./components/UI/Posts/Holdersrc/Holder";
 import Createpost from "./components/UI/Posts/Create/Createpost";
+import PostTemplate from "./components/UI/Posts/PostTemplate/PostTemplate";
+import UserName from "./components/UI/Posts/UserName/UserName";
 function App() {
   
+  function addNewPost() {
+
+  }
+
   return (
     <div className="App">
       {/* главный логотип */}
@@ -26,8 +32,28 @@ function App() {
       <DesInfo/>
       <DesInfo InfoSpace={<AuthorInfo/>}/>
 
+      {/* блок создания постов */}
+      <UserName/>
       <Holder/>
-      <Createpost/>
+      <Createpost onClick={addNewPost}/>
+      
+      {/* посты */}
+      <PostTemplate 
+        UserName='Анатолий Щуренко' 
+        PostText='Тестовое сообщение'
+        Date='6 Февраля 2026'
+        Time='20:00'
+      />
+      <PostTemplate 
+        UserName='Пипука' 
+        PostText='Тестовое сообщение 2'
+        Time='20:01'
+      />
+      <PostTemplate 
+        UserName='Яна' 
+        PostText='НЕНАВИЖУ ПИПУКУ!'
+        Time='20:04'
+      />
     </div> 
   );
 }
