@@ -1,0 +1,33 @@
+.template{
+    display: flex;         
+    text-transform: none;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.404);
+    background-color: rgb(53, 53, 53);
+    width: 500px;
+    padding: 20px;
+    font-size: 16px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.user, .text {
+    display: flex;
+    margin-left: 15px;
+}
+.time{
+    display: flex;
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5)
+}
+.date{
+    display: flexbox;         
+    text-transform: none;
+    width: 500px;
+    font-size: 16px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 15px;
+}
