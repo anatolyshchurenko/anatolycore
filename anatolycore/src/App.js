@@ -38,11 +38,12 @@ function App() {
       <Createpost onClick={addNewPost}/>
       
       {/* посты */}
+      
+      
       <PostTemplate 
-        UserName='Анатолий Щуренко' 
-        PostText='Тестовое сообщение'
-        Date='6 Февраля 2026'
-        Time='20:00'
+        UserName='Яна' 
+        PostText='НЕНАВИЖУ ПИПУКУ!'
+        Time='20:04'
       />
       <PostTemplate 
         UserName='Пипука' 
@@ -50,9 +51,9 @@ function App() {
         Time='20:01'
       />
       <PostTemplate 
-        UserName='Яна' 
-        PostText='НЕНАВИЖУ ПИПУКУ!'
-        Time='20:04'
+        UserName='Анатолий Щуренко' 
+        PostText='Тестовое сообщение'
+        Time='20:00'
       />
     </div> 
   );
