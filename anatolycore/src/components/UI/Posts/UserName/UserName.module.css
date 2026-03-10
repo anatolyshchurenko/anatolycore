@@ -25,6 +25,9 @@
     resize: none; 
     padding: 2 10px;
     margin-top: 85px;
+    position: relative;
+    bottom: 180px;
+    
 }
 .user:focus {
     outline: none;
